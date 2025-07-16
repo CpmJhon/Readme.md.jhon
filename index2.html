@@ -1,0 +1,404 @@
+<html lang="en" class="scroll-smooth" style="scroll-behavior:smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Website CpmJhon21 - Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+<style>
+  body {
+    font-family: 'Fira Code', monospace;
+  }
+  /* Custom scrollbar for dark mode */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1f2937;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #2ef7a1;
+    border-radius: 10px;
+    border: 2px solid #1f2937;
+  }
+  /* Floating share button container */
+  #floating-share {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 50;
+  }
+  /* Container for social buttons */
+  #social-buttons {
+    position: absolute;
+    bottom: 56px; /* space above main button */
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  #social-buttons.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  /* Each social button circle */
+  .social-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.3);
+    transition: background-color 0.2s ease;
+  }
+  .social-btn:focus {
+    outline: 2px solid #2ef7a1;
+    outline-offset: 2px;
+  }
+  .social-telegram { background-color: #2CA5E0; }
+  .social-telegram:hover { background-color: #1B7FC1; }
+  .social-instagram { background-color: #C13584; }
+  .social-instagram:hover { background-color: #9B2E6B; }
+  .social-website { background-color: #4B5563; }
+  .social-website:hover { background-color: #374151; }
+  .social-tiktok { background-color: #000000; }
+  .social-tiktok:hover { background-color: #222222; }
+  .social-youtube { background-color: #FF0000; }
+  .social-youtube:hover { background-color: #CC0000; }
+  .social-paypal { background-color: #003087; }
+  .social-paypal:hover { background-color: #002060; }
+  .social-saweria { background-color: #FBBF24; color: #1F2937; }
+  .social-saweria:hover { background-color: #F59E0B; }
+  /* Main share button */
+  #main-share-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 9999px;
+    background-color: #2ef7a1;
+    color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgb(46 247 161 / 0.6);
+    transition: background-color 0.3s ease;
+  }
+  #main-share-btn:hover {
+    background-color: #24c78a;
+  }
+  #main-share-btn:focus {
+    outline: 2px solid #065f46;
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body class="bg-gray-900 text-gray-200 min-w-[300px]">
+
+<!-- HEADER -->
+<section id="header" class="w-full">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Cpm%20Jhon21&fontSize=80&fontAlign=50&animation=fadeIn"
+    alt="Animated waving capsule banner with text Cpm Jhon21 in gradient colors"
+    class="w-full"
+    loading="lazy"
+  />
+  <img
+    src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2EF7A1&center=true&vCenter=true&width=500&lines=Security+Researcher;Linux+Enthusiast;Full+Stack+Developer;Prompt+Engineer"
+    alt="Typing animation SVG showing roles: Security Researcher, Linux Enthusiast, Full Stack Developer, Prompt Engineer in green text"
+    class="max-w-md w-full mx-auto mt-4"
+    loading="lazy"
+  />
+</section>
+
+<!-- BIO SECTION -->
+<section id="bio" class="py-16 px-6 max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
+  <img
+    src="https://telegra.ph/file/0ba4fbd1ecd56fbed73b4.jpg"
+    alt="Profile photo of CpmJhon21, a young man smiling with casual clothes, circular crop"
+    class="w-48 h-48 rounded-full object-cover flex-shrink-0"
+    loading="lazy"
+  />
+  <div class="flex-1 text-left bg-gray-800 p-6 rounded-lg shadow-lg">
+    <h2 class="text-3xl font-semibold mb-4">BIO DATA😇</h2>
+    <ul class="space-y-2 text-lg list-none">
+      <li>👋 Hi, I’m <a href="https://github.com/CpmJhon21" target="_blank" rel="noopener noreferrer" class="text-green-400 hover:underline">@CpmJhon21</a></li>
+      <li>👼 My name is Jhon</li>
+      <li>🗣️ I am 21 years old</li>
+      <li>🔭 I am not programmer</li>
+      <li>👀 I’m interested in ...</li>
+      <li>🌱 I’m currently learning ...</li>
+      <li>💞️ I’m looking to collaborate on ...</li>
+      <li>📫 How to reach me ...</li>
+      <li>😄 Pronouns: ...</li>
+      <li>⚡ Fun fact: ...</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SCRIPT INFO (diletakkan setelah bio section) -->
+<section class="px-6 max-w-4xl mx-auto -mt-8">
+  <div class="mt-6 text-sm text-gray-400 leading-relaxed bg-gray-800 p-4 rounded-lg shadow-inner">
+    <p>
+      This script is created by <a href="https://github.com/CpmJhon21" target="_blank" rel="noopener noreferrer" class="text-green-400 hover:underline">Cpm_Jhon</a> using Node.js and the <a href="https://github.com/WhiskeySockets/Baileys" target="_blank" rel="noopener noreferrer" class="text-green-400 hover:underline">WhiskeySocket/Baileys</a> library. The script is currently in the development phase (BETA), so there may still be some errors that can be ignored. If errors persist even after debugging, please contact the owner for assistance. ~ By Jhon
+    </p>
+  </div>
+</section>
+
+<!-- GITHUB STATS -->
+<section id="github-stats" class="py-16 px-6 max-w-5xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-8">
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=CpmJhon21&show_icons=true&theme=radical"
+    alt="GitHub readme stats card for user CpmJhon21 with icons and radical theme"
+    class="max-w-xl w-full rounded-lg shadow-lg"
+    loading="lazy"
+  />
+  <img
+    src="https://github-readme-streak-stats.herokuapp.com?user=CpmJhon21&theme=radical"
+    alt="GitHub streak stats card for user CpmJhon21 with radical theme"
+    class="max-w-xl w-full rounded-lg shadow-lg"
+    loading="lazy"
+  />
+</section>
+
+<!-- TENTANG SAYA -->
+<section id="tentang-saya" class="py-16 px-6 max-w-5xl mx-auto">
+  <h2 class="text-4xl font-semibold mb-8 text-center">Tentang Saya</h2>
+  <pre class="bg-gray-800 rounded-lg p-6 overflow-x-auto text-green-400 text-sm font-mono max-w-4xl mx-auto whitespace-pre-wrap leading-relaxed">
+class CpmJhon21:
+    name = "CpmJhon21"; location = "Jakarta, Indonesia"
+    work = "Security Researcher & Developer"
+    interests = ["Cybersecurity", "GNU/Linux", "Open Source"]
+    gaming = ["PS2 Classics", "MLBB", "COC"]
+    motto = "Simple tools, massive impact"
+    def get_daily_routine(self): return ["Code", "Hack", "Learn", "Game", "Repeat"]
+  </pre>
+
+  <h3 class="text-2xl font-semibold mt-12 mb-6 text-center">TEKNOLOGI YANG DIGUNAKAN</h3>
+  <div class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-9 gap-4 max-w-4xl mx-auto text-center">
+    <span class="bg-green-600 rounded-full py-2 px-4 text-sm font-semibold">Python</span>
+    <span class="bg-green-600 rounded-full py-2 px-4 text-sm font-semibold">PHP</span>
+    <span class="bg-green-600 rounded-full py-2 px-4 text-sm font-semibold">Bash</span>
+    <span class="bg-green-600 rounded-full py-2 px-4 text-sm font-semibold">HTML</span>
+    <span class="bg-green-600 rounded-full py-2 px-4 text-sm font-semibold">CSS</span>
+    <span class="bg-green-600 rounded-full py-2 px-4 text-sm font-semibold">JS</span>
+    <span class="bg-green-600 rounded-full py-2 px-4 text-sm font-semibold">Linux</span>
+    <span class="bg-green-600 rounded-full py-2 px-4 text-sm font-semibold">Kali</span>
+    <span class="bg-green-600 rounded-full py-2 px-4 text-sm font-semibold">Termux</span>
+    <span class="bg-green-600 rounded-full py-2 px-4 text-sm font-semibold">Acode</span>
+  </div>
+</section>
+
+<!-- PROJECT TERPILIH -->
+<section id="project-terpilih" class="py-16 px-6 max-w-5xl mx-auto">
+  <h2 class="text-4xl font-semibold mb-10 text-center">Project Terpilih</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <article class="bg-gray-800 rounded-lg p-6 flex flex-col justify-between shadow-lg">
+      <h3 class="text-2xl font-semibold mb-3">Website-jhon-main</h3>
+      <p class="mb-6 flex-grow text-gray-300">A personal website project showcasing portfolio and blog content with modern design and responsive layout.</p>
+      <a href="https://github.com/CpmJhon21/Website-jhon-main" target="_blank" rel="noopener noreferrer" class="inline-block bg-green-500 hover:bg-green-600 text-gray-900 font-semibold py-2 px-4 rounded transition">Lihat di GitHub</a>
+    </article>
+    <article class="bg-gray-800 rounded-lg p-6 flex flex-col justify-between shadow-lg">
+      <h3 class="text-2xl font-semibold mb-3">CpmJhon-main</h3>
+      <p class="mb-6 flex-grow text-gray-300">Main repository for CpmJhon’s scripts and tools related to security research and automation.</p>
+      <a href="https://github.com/CpmJhon21/CpmJhon-main" target="_blank" rel="noopener noreferrer" class="inline-block bg-green-500 hover:bg-green-600 text-gray-900 font-semibold py-2 px-4 rounded transition">Lihat di GitHub</a>
+    </article>
+    <article class="bg-gray-800 rounded-lg p-6 flex flex-col justify-between shadow-lg">
+      <h3 class="text-2xl font-semibold mb-3">short-link</h3>
+      <p class="mb-6 flex-grow text-gray-300">A URL shortener project to create and manage short links with analytics and easy sharing.</p>
+      <a href="https://github.com/CpmJhon21/short-link" target="_blank" rel="noopener noreferrer" class="inline-block bg-green-500 hover:bg-green-600 text-gray-900 font-semibold py-2 px-4 rounded transition">Lihat di GitHub</a>
+    </article>
+  </div>
+</section>
+
+<!-- INSTALL GUIDE -->
+<section id="install-guide" class="py-16 px-6 max-w-5xl mx-auto">
+  <h2 class="text-4xl font-semibold mb-10 text-center">Install Guide</h2>
+
+  <div class="max-w-4xl mx-auto space-y-12">
+    <div>
+      <h3 class="text-2xl font-semibold mb-4">INSTALL BOT</h3>
+      <pre class="bg-gray-800 rounded-lg p-6 overflow-x-auto text-green-400 text-lg font-mono" style="white-space: pre-wrap;">
+git clone https://github.com/CpmJhon21/bot-wa-tes-by-jhon
+cd bot-wa-tes-by-jhon-main
+npm install
+npm update
+      </pre>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold mb-4">For Termux/Ubuntu/SSH User</h3>
+      <pre class="bg-gray-800 rounded-lg p-6 overflow-x-auto text-green-400 text-lg font-mono" style="white-space: pre-wrap;">
+pkg update && pkg upgrade
+pkg install git
+pkg install nodejs
+pkg install ffmpeg
+pkg install imagemagick
+git clone https://github.com/CpmJhon21/bot-wa-tes-by-jhon
+cd bot-wa-tes-by-jhon-main
+npm install
+      </pre>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold mb-4">[ RECOMMENDED INSTALL ON TERMUX ]</h3>
+      <pre class="bg-gray-800 rounded-lg p-6 overflow-x-auto text-green-400 text-lg font-mono" style="white-space: pre-wrap;">
+pkg install yarn
+yarn
+      </pre>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold mb-4">Run</h3>
+      <pre class="bg-gray-800 rounded-lg p-6 overflow-x-auto text-green-400 text-lg font-mono" style="white-space: pre-wrap;">
+node .
+      </pre>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold mb-4">Connection Options</h3>
+      <ul class="list-disc list-inside space-y-1 text-lg text-gray-300">
+        <li>Support Qr Code</li>
+        <li>Support Pairing Code</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold mb-4">Features</h3>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse border border-gray-700">
+          <thead>
+            <tr class="bg-gray-800">
+              <th class="border border-gray-700 px-4 py-2">Menu</th>
+              <th class="border border-gray-700 px-4 py-2">Bot</th>
+              <th class="border border-gray-700 px-4 py-2">Group</th>
+              <th class="border border-gray-700 px-4 py-2">Search</th>
+              <th class="border border-gray-700 px-4 py-2">Download</th>
+              <th class="border border-gray-700 px-4 py-2">Tools</th>
+              <th class="border border-gray-700 px-4 py-2">Ai</th>
+              <th class="border border-gray-700 px-4 py-2">Game</th>
+              <th class="border border-gray-700 px-4 py-2">Fun</th>
+              <th class="border border-gray-700 px-4 py-2">Owner</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-gray-900">
+              <td class="border border-gray-700 px-4 py-2">Work</td>
+              <td class="border border-gray-700 px-4 py-2 text-green-400 text-center">✅</td>
+              <td class="border border-gray-700 px-4 py-2 text-green-400 text-center">✅</td>
+              <td class="border border-gray-700 px-4 py-2 text-green-400 text-center">✅</td>
+              <td class="border border-gray-700 px-4 py-2 text-green-400 text-center">✅</td>
+              <td class="border border-gray-700 px-4 py-2 text-green-400 text-center">✅</td>
+              <td class="border border-gray-700 px-4 py-2 text-green-400 text-center">✅</td>
+              <td class="border border-gray-700 px-4 py-2 text-green-400 text-center">✅</td>
+              <td class="border border-gray-700 px-4 py-2 text-green-400 text-center">✅</td>
+              <td class="border border-gray-700 px-4 py-2 text-green-400 text-center">✅</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURRENT SETUP -->
+<section id="current-setup" class="py-16 px-6 max-w-5xl mx-auto">
+  <h2 class="text-4xl font-semibold mb-10 text-center">🎯 Current Setup</h2>
+  <pre class="bg-gray-800 rounded-lg p-6 overflow-x-auto text-green-400 text-lg font-mono max-w-4xl mx-auto" style="white-space: pre-wrap;">
+Development:
+  Editor: 
+    mobile: ["Acode", "Quick Edit"]
+    terminal: ["Termux", "Linux Userland"]
+  
+System:
+  device: "Itel P55 NFC"
+  processor: "Unisoc T606"
+  os: "Android 13"
+  environment: ["Kali Linux", "Ubuntu"]
+  </pre>
+</section>
+
+<!-- FLOATING SHARE BUTTON FOR KONTAK SOSIAL -->
+<div id="floating-share" aria-label="Social contact share button">
+  <button id="main-share-btn" aria-expanded="false" aria-controls="social-buttons" aria-label="Toggle social contact links">
+    <i class="fas fa-share-alt"></i>
+  </button>
+  <div id="social-buttons" role="menu" aria-hidden="true" class="" >
+    <a href="https://t.me/CpmJhon21" target="_blank" rel="noopener noreferrer" class="social-btn social-telegram" role="menuitem" aria-label="Telegram">
+      <i class="fab fa-telegram-plane"></i>
+    </a>
+    <a href="https://instagram.com/CpmJhon21" target="_blank" rel="noopener noreferrer" class="social-btn social-instagram" role="menuitem" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://cpmjhon21.github.io" target="_blank" rel="noopener noreferrer" class="social-btn social-website" role="menuitem" aria-label="Website">
+      <i class="fas fa-globe"></i>
+    </a>
+    <a href="https://www.tiktok.com/@CpmJhon21" target="_blank" rel="noopener noreferrer" class="social-btn social-tiktok" role="menuitem" aria-label="TikTok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://www.youtube.com/channel/UCpmJhon21" target="_blank" rel="noopener noreferrer" class="social-btn social-youtube" role="menuitem" aria-label="YouTube">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://paypal.me/CpmJhon21" target="_blank" rel="noopener noreferrer" class="social-btn social-paypal" role="menuitem" aria-label="PayPal">
+      <i class="fab fa-paypal"></i>
+    </a>
+    <a href="https://saweria.co/CpmJhon21" target="_blank" rel="noopener noreferrer" class="social-btn social-saweria" role="menuitem" aria-label="Saweria">
+      <i class="fas fa-coins"></i>
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER BANNER -->
+<section id="footer" class="w-full">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"
+    alt="Footer waving capsule banner with gradient colors"
+    class="w-full"
+    loading="lazy"
+  />
+</section>
+
+<script>
+  const mainBtn = document.getElementById('main-share-btn');
+  const socialButtons = document.getElementById('social-buttons');
+
+  mainBtn.addEventListener('click', () => {
+    const isShown = socialButtons.classList.toggle('show');
+    socialButtons.setAttribute('aria-hidden', !isShown);
+    mainBtn.setAttribute('aria-expanded', isShown);
+  });
+
+  // Close social buttons if clicked outside
+  document.addEventListener('click', (e) => {
+    if (!document.getElementById('floating-share').contains(e.target)) {
+      if (socialButtons.classList.contains('show')) {
+        socialButtons.classList.remove('show');
+        socialButtons.setAttribute('aria-hidden', 'true');
+        mainBtn.setAttribute('aria-expanded', 'false');
+      }
+    }
+  });
+
+  // Keyboard accessibility: close on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && socialButtons.classList.contains('show')) {
+      socialButtons.classList.remove('show');
+      socialButtons.setAttribute('aria-hidden', 'true');
+      mainBtn.setAttribute('aria-expanded', 'false');
+      mainBtn.focus();
+    }
+  });
+</script>
+
+</body>
+</html>
